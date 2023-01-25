@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" type="text/css" href="logstyle.css">
+
+    <title>Login Session</title>
+    <h1>Login</h1>
+    <!--
+    <style>
+    form {
+        text-align: center;
+    }
+    </style>
+    -->  
+ 
+    <style>
+    .submit-btn {
+        padding-top: 2px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-block: 3px;
+        padding-inline-end: 10px;
+    }
+    </style>
+    <script>
+        function saveInputs() {
+            var temp_username = document.getElementById("username").value;
+            var temp_password = document.getElementById("password").value;
+            document.write("<br>Username given: " + temp_username + "<br><br>"); <!--This prints the username given and the line down prints the password given-->
+            document.write("Password given: " + temp_password);
+            document.write("<br><br><a href='https://youtu.be/BBJa32lCaaY'>DON'T BE SCARED, PRESS ME</a>");
+            console.log(temp_username);
+            console.log(temp_password);
+        }
+
+        function togglePassword() {
+            var passwordInput = document.getElementById("password");
+            if(passwordInput.type === "password") {
+                passwordInput.type = "text";
+                togglePasswordBtn.innerHTML = "Hide";
+            }else {
+                passwordInput.type = "password";
+                togglePasswordBtn.innerHTML = "Show";
+            }
+        }
+    </script> 
+
+</head>
+<body>
+    <!-- 
+    Here starts the form label (All the inputs basika) 
+    -->
+
+    <form id="form" onkeydown="if (event.keyCode === 13) {saveInputs(); document.getElementById('form').submit();}">
+        <label for="username">Username:</label>
+        <input type="text" id="username">
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password">
+        <br><br>
+        <button type="button" id="togglePasswordBtn" onclick="togglePassword()">Show</button>
+        <br><br>
+        <input type="button" class="submit-btn" onclick="saveInputs()" value=" Submit">          
+    </form>
+    
+</body>
+</html>
