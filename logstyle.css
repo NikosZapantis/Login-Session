@@ -76,3 +76,13 @@ input[type="text"], input[type="password"] {
     border-radius: 5px;
     padding: 1px;
 }
+
+#message-container {
+    font-family : Georgia;
+    font: 16px Georgia;
+    color: rgb(0, 0, 0);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 7px;
+    border: 2px solid rgb(0, 0, 0);
+}
