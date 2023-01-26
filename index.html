@@ -6,14 +6,7 @@
 
     <title>Login Session</title>
     <h1>Login</h1>
-    <!--
-    <style>
-    form {
-        text-align: center;
-    }
-    </style>
-    -->  
- 
+
     <style>
     .submit-btn {
         padding-top: 2px;
@@ -23,6 +16,7 @@
         padding-block: 3px;
         padding-inline-end: 10px;
     }
+
     </style>
     <script>
         function saveInputs() {
@@ -49,9 +43,7 @@
 
 </head>
 <body>
-    <!-- 
-    Here starts the form label (All the inputs basika) 
-    -->
+    <!-- Here starts the form label (All the inputs basika) -->
 
     <form id="form" onkeydown="if (event.keyCode === 13) {saveInputs(); document.getElementById('form').submit();}">
         <label for="username">Username</label>
@@ -64,9 +56,9 @@
         <br><br>
         <input type="button" class="submit-btn" onclick="saveInputs()" value=" Submit">          
     </form>
-    
+
 </body>
-    
+
     <div id="message-container">
         <br>
         <p>Hello there, this is my first ever program in HTML using CSS and JS too!<br>     You could use "Testing" for username and "Testing123" for password,
