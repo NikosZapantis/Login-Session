@@ -30,7 +30,7 @@
             var temp_password = document.getElementById("password").value;
             document.write("<br>Username given: " + temp_username + "<br><br>"); <!--This prints the username given and the line down prints the password given-->
             document.write("Password given: " + temp_password);
-            document.write("<br><br><a href='https://youtu.be/BBJa32lCaaY'>DON'T BE SCARED, PRESS ME</a>");
+            document.write("<br><br><a href='https://youtu.be/BBJa32lCaaY'>Return</a>");
             console.log(temp_username);
             console.log(temp_password);
         }
@@ -54,10 +54,10 @@
     -->
 
     <form id="form" onkeydown="if (event.keyCode === 13) {saveInputs(); document.getElementById('form').submit();}">
-        <label for="username">Username:</label>
+        <label for="username">Username</label>
         <input type="text" id="username">
         <br><br>
-        <label for="password">Password:</label>
+        <label for="password">Password</label>
         <input type="password" id="password">
         <br><br>
         <button type="button" id="togglePasswordBtn" onclick="togglePassword()">Show</button>

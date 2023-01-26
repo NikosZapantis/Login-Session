@@ -1,7 +1,13 @@
 body {
-    background-color: rgb(32, 31, 31);
+    font-family : Georgia;
+    font: 16px Georgia;
+    background-color: rgb(11, 11, 11);
+    background-image: url("../logimage.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 108vh;
+    padding: 0%;
     color: rgb(255, 94, 0);
-    font-family: Arial, sans-serif;
 }
 
 h1 {
