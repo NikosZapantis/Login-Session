@@ -2,7 +2,7 @@ body {
     font-family : Georgia;
     font: 16px Georgia;
     background-color: rgb(11, 11, 11);
-    background-image: url("logimage.jpg");
+    background-image: url("../logimage.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     height: 108vh;
@@ -26,6 +26,8 @@ form {
 
 label {
     display: block;
+    block-size: 20px;
+    margin-block-start: 0px;
     font-size: 1.2em;
     margin-bottom: 5px;
 }
@@ -35,14 +37,11 @@ input[type="text"], input[type="password"] {
     margin-bottom: 20px;
     width: 100%;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
+    font-family: Georgia;
+    font: 16px Georgia;
     background-color: #ffffff;
     color: black;
-}
-
-#togglePasswordBtn {
-    float: right;
-    margin-top: -30px;
 }
 
 .submit-btn {
@@ -85,4 +84,16 @@ input[type="text"], input[type="password"] {
     background-repeat: no-repeat;
     padding: 7px;
     border: 2px solid rgb(0, 0, 0);
+}
+
+#secondpage-container {
+    font-family : Georgia;
+    font: 16px Georgia;
+    background-color: rgb(11, 11, 11);
+    background-image: url("../logimage.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 108vh;
+    padding: 0%;
+    color: rgb(255, 94, 0);
 }
