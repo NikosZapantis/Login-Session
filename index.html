@@ -18,13 +18,17 @@
     }
 
     </style>
+
     <script>
         function saveInputs() {
             var temp_username = document.getElementById("username").value;
             var temp_password = document.getElementById("password").value;
-            document.write("<br>Username given: " + temp_username + "<br><br>"); <!--This prints the username given and the line down prints the password given-->
-            document.write("Password given: " + temp_password);
-            document.write("<br><br><a href='https://p6lm35tmkq8.typeform.com/to/XTDwERyZ'>Send me feedback</a>");
+            document.getElementById("success-message").innerHTML = "Successful login ✔️";
+            document.getElementById("success-message").classList.add("success");
+            document.getElementById("IOmessage-container").innerHTML = 
+            "Username given: " + temp_username + "<br>" + 
+            "Password given: " + temp_password+"<br>"+
+            "<br><br><a href='https://p6lm35tmkq8.typeform.com/to/XTDwERyZ'>Send me feedback</a>";
             console.log(temp_username);
             console.log(temp_password);
         }
@@ -53,15 +57,23 @@
         <input type="password" id="password">
         <br><br>
         <button type="button" id="togglePasswordBtn" onclick="togglePassword()">Show</button>
-        <br><br>
+        <br>
+        <div id="success-message"></div>
+        <br>
         <input type="button" class="submit-btn" onclick="saveInputs()" value=" Submit">          
     </form>
 
 </body>
 
     <div id="message-container">
-        <p>Hello there, this is my first ever program in HTML using CSS and JS too!<br>     You could use "Testing" for username and "Testing123" for password,
+        <p>Hello there, this is my first ever program in HTML using CSS and JS too!<br>You could use "Testing" for username and "Testing123" for password,
         or even your desired username and password, everything is acceptable by my program. After submiting please take some time to send me feedback so i can involve!</p>
+    </div>
+
+    <div id="IOmessage-container">
+        <div id="Awaitingforinputs-container">
+            <h1>AWAITING FOR INPUTS<span id="DOTS-container">...</span></h1>
+        </div>
     </div>
     
 </html>
