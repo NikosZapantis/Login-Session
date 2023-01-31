@@ -72,7 +72,13 @@ input[type="text"], input[type="password"] {
     border: none;
     cursor: pointer;
     float: right;
-    margin-top: -30px;
+    margin-top: -22px;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-block: 3px;
+    padding-inline-end: 0px;
 }
 
 #togglePasswordBtn:hover {
