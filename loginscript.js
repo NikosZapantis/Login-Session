@@ -7,7 +7,7 @@ function saveInputs() {
     document.getElementById("IOmessage-container").innerHTML = 
     "Username given: " + temp_username + "<br>" + 
     "Password given: " + temp_password+"<br>"+
-    "<br><br><a href='https://www.youtube.com/watch?v=xvFZjo5PgG0'>Refresh</a>";
+    "<br><br><a href='https://nikoszapantis.github.io/'>🔄</a>";
     console.log(temp_username);
     console.log(temp_password);
 }
