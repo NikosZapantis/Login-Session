@@ -23,11 +23,25 @@
         <button type="button" id="togglePasswordBtn" onclick="togglePassword()">Show</button>
         <br>
         <div id="success-message"></div>
+        <div id="RememberMe-container" >
+            <input type ="checkbox"> Remember me
+        </div>
         <br>
         <input type="button" class="submit-btn" onclick="saveInputs()" value=" Submit">          
     </form>
 
 </body>
+
+    <div id="Cookies-container">
+        <div id="CF-container">COOKIES FOUND ON THIS SITE!</div>
+        <br>
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked> Allow all.
+        <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" unchecked>Allow only-essential.
+        <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>Reject all.
+        <label class="form-check-label" for="flexSwitchCheckDisabled"></label>
+    </div>
 
     <div id="message-container">
         <p>Hello there, this is my first ever program in HTML using CSS and JS too!<br>You could use "Testing" for username and "Testing123" for password,
