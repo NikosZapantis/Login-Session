@@ -21,4 +21,4 @@ function togglePassword() {
         passwordInput.type = "password";
         togglePasswordBtn.innerHTML = "Show";
     }
-}
+} 
