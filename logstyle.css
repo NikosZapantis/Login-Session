@@ -161,4 +161,12 @@ input[type="text"], input[type="password"] {
 #RememberMe-container {
     color: rgb(255, 94, 0);
     text-align: left;
-} 
+}
+
+.form-check-input3 {
+    cursor: not-allowed;
+}
+
+.form-check-input1 , .form-check-input2, .check-box{
+    cursor: pointer;
+}
