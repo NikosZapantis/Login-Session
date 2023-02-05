@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" type="text/css" href="logstyle.css">
+    <link rel="icon" href="icon.png">
+
+    <title>Login Session</title>
+    <h1>Login</h1>
+
+    <script src="loginscript.js"></script> 
+
+</head>
+<body>
+
+    <form id="form" onkeydown="if (event.keyCode === 13) {saveInputs(); preventDefault(); document.getElementById('form').submit();}">
+        <label for="username">Username</label>
+        <input type="text" placeholder="Username is required" id="username">
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password is required" id="password">
+        <br><br>
+        <button type="button" id="togglePasswordBtn" onclick="togglePassword()">Show</button>
+        <br>
+        <label for="email">Email (optional)</label>
+        <input type="email" placeholder="Enter your email" id="email">
+        <br><br>
+        <div id="RememberMe-container" >
+            <input type ="checkbox" class="check-box"> Remember me
+        </div>
+        <br>
+        <input type="button" class="submit-btn" onclick="saveInputs()" value=" Submit">  
+        <br><br>        
+        <div id="success-message"></div>
+    </form>
+
+</body>
+
+    <div id="Cookies-container">
+        <div id="CF-container">COOKIES FOUND ON THIS SITE!</div>
+        <br>
+        <input class="form-check-input1" type="checkbox" id="flexSwitchCheckChecked1" checked> Allow all.
+        <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+        <input class="form-check-input2" type="checkbox" id="flexSwitchCheckChecked2" unchecked>Allow only-essential.
+        <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+        <input class="form-check-input3" type="checkbox" id="flexSwitchCheckDisabled" disabled>Reject all.
+        <label class="form-check-label" for="flexSwitchCheckDisabled"></label>
+    </div>
+
+    <div id="message-container">
+        <p>Hello there, this is my first ever program in HTML using CSS and JS too!<br>You could use "Testing" for username and "Testing123" for password,
+        or even your desired username and password, everything is acceptable by my program. After submiting please take some time to send me feedback so i can involve!</p>
+    </div>
+
+    <div id="IOmessage-container">
+        <div id="Awaitingforinputs-container">
+            <h1>AWAITING FOR INPUTS<span class="DOTS-container">...</span></h1>
+        </div>
+    </div>
+    
+</html>
