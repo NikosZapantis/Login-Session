@@ -8,13 +8,13 @@ function saveInputs() {
     if(temp_email === '') {
         document.getElementById("IOmessage-container").innerHTML = 
         "-Username given: " + temp_username + "<br>" + 
-        "-Password given: " + temp_password + "<br>"+
+        "-Password given: " + temp_password + "<br>" +
         "<br>-Email given (optional): N/A" +
         "<br><br><a href='https://nikoszapantis.github.io/'>🔄</a>";
     }else {
         document.getElementById("IOmessage-container").innerHTML = 
         "-Username given: " + temp_username + "<br>" + 
-        "-Password given: " + temp_password+ "<br>" +
+        "-Password given: " + temp_password + "<br>" +
         "<br>-Email given (optional): " + temp_email +
         "<br><br><a href='https://nikoszapantis.github.io/'>🔄</a>";
     } 
