@@ -17,10 +17,10 @@ function saveInputs() {
         "-Password given: " + temp_password+ "<br>" +
         "<br>-Email given (optional): " + temp_email +
         "<br><br><a href='https://nikoszapantis.github.io/'>🔄</a>";
-    }
+    } 
     console.log(temp_username);
     console.log(temp_password);
-}
+} 
 
 function togglePassword() {
     var passwordInput = document.getElementById("password");
