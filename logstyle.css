@@ -22,8 +22,8 @@ h2 {
     font-size: xx-large;
     color: rgb(233, 154, 6);
     background-color: black;
-    border-radius: 25px;
-}
+    border-radius: 25px; 
+} 
 
 form {
     text-align: center;
@@ -140,7 +140,7 @@ input[type="text"], input[type="password"] {
     background-size: contain;
     background-repeat: no-repeat;
     padding: 7px;
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0); 
 }
 
 #Awaitingforinputs-container{
@@ -149,7 +149,7 @@ input[type="text"], input[type="password"] {
     font: 16px Georgia;
     background-size: contain;
     background-repeat: no-repeat;
-    padding: 0.5px;
+    padding: 0.5px; 
 }
 
 @keyframes bounce {
@@ -162,12 +162,12 @@ input[type="text"], input[type="password"] {
     100% {
         transform: translateY(0);
     }
-}
+} 
 
 .success {
     color: green;
     text-align: right;
-}
+} 
 
 #RememberMe-container {
     color: rgb(255, 94, 0);
