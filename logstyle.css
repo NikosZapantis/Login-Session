@@ -19,7 +19,7 @@ h1 {
     padding-top: -5px;
     padding-bottom: 2px;
     animation: moving 15s linear infinite;
-}
+} 
 
 @keyframes moving {
     from {
@@ -27,8 +27,8 @@ h1 {
     }
     to {
         transform: translateX(500%);
-    }
-}
+    } 
+} 
 
 h2 {
     text-align: center;
