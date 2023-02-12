@@ -94,7 +94,7 @@ input[type="email"] {
 }
 
 .submit-btn:hover {
-    background-color: #b3b3b3;
+    background-color: #000000;
     color: rgb(2, 255, 23);
     outline-style: solid;
     outline-color: rgb(13, 216, 30);
