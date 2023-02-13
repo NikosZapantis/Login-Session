@@ -18,7 +18,7 @@ h1 {
     border-radius: 25px;
     padding-top: -5px;
     padding-bottom: 2px;
-    animation: moving 15s linear infinite;
+    animation: moving 25s linear infinite;
 } 
 
 @keyframes moving {
@@ -28,7 +28,7 @@ h1 {
     to {
         transform: translateX(500%);
     } 
-} 
+}  
 
 h2 {
     text-align: center;
@@ -69,29 +69,37 @@ input[type="text"], input[type="password"] {
     color: black;
 }
 
+input[type="email"] {
+    border-radius: 20px;
+}
+
 .submit-btn {
     width: 100%;
     height: 10%;
     background-color: rgb(7, 209, 85);
-    color: #F9F6EE;
+    color: #000000;
     padding: 10px;
     border-radius: 20px;
     border: none;
     font-size: 1.5em;
     cursor: pointer;
     padding-top: 2px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
     padding-block: 3px;
     padding-inline-end: 10px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .submit-btn:hover {
-    background-color: #b3b3b3;
+    background-color: #000000;
     color: rgb(2, 255, 23);
     outline-style: solid;
     outline-color: rgb(13, 216, 30);
+    transform: translateY(-3px) translateX(5px);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 #togglePasswordBtn {
@@ -103,7 +111,7 @@ input[type="text"], input[type="password"] {
     float: right;
     margin-top: -22px;
     padding-top: 2px;
-    padding-bottom: 4px;
+    padding-bottom: 4px; 
     padding-left: 3px;
     padding-right: 3px;
     padding-block: 3px;
@@ -120,7 +128,7 @@ input[type="text"], input[type="password"] {
 #message-container {
     font-family : Georgia;
     font: 16px Georgia;
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0); 
     background-size: contain;
     background-repeat: no-repeat;
     padding: 7px;
@@ -193,7 +201,7 @@ input[type="text"], input[type="password"] {
 }
 
 .form-check-input3 {
-    cursor: not-allowed;
+    cursor: not-allowed; 
 }
 
 .form-check-input1 , .form-check-input2, .check-box{
