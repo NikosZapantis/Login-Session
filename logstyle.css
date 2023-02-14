@@ -65,12 +65,18 @@ input[type="text"], input[type="password"] {
     border-radius: 20px;
     font-family: Georgia;
     font: 16px Georgia;
-    background-color: #ffffff;
+    background-color: rgb(194, 194, 194);
+    color: black;
+}
+
+::placeholder {
     color: black;
 }
 
 input[type="email"] {
+    background-color: rgb(194, 194, 194);
     border-radius: 20px;
+    border: none;
 }
 
 .submit-btn {
