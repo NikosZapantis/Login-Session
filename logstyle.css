@@ -3,18 +3,22 @@ body {
     font: 16px Georgia;
     background-color: rgb(236, 154, 0);
     background-image: url("../logimage.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 200vh;
+    background-position: center;
+    height: 125vh;
     padding: 0%;
     color: rgb(255, 94, 0);
 }
 
 h1 {
-    text-align: left;
+    text-align: center;
     color: rgb(233, 154, 6);
     background-color: black;
-    width: 21.5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25%;
     border-radius: 25px;
     padding-top: -5px;
     padding-bottom: 2px;
