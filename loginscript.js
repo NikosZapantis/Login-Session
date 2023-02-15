@@ -11,14 +11,14 @@ function saveInputs() {
         "-Password given: " + temp_password + "<br>"+
         "-Email given (optional): N/A" +
         "<br><br>You can refresh the page here:&emsp;<a href='https://nikoszapantis.github.io/'>🔄</a>" + 
-        "&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;You can download my code here:&emsp;<a href='/Nikos_Code.pdf' download>⬇️</a>";
+        "<br>You can download my code here:&emsp;<a href='/Nikos_Code.pdf' download>⬇️</a>";
     }else {
         document.getElementById("IOmessage-container").innerHTML = 
         "-Username given: " + temp_username + "<br>" + 
         "-Password given: " + temp_password + "<br>" +
         "<br>-Email given (optional): " + temp_email +
         "<br><br>You can refresh the page here:&emsp;<a href='https://nikoszapantis.github.io/'>🔄</a>" + 
-        "&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;You can download my code here:&emsp;<a href='/Nikos_Code.pdf' download>⬇️</a>";
+        "<br>You can download my code here:&emsp;<a href='/Nikos_Code.pdf' download>⬇️</a>";
     } 
     console.log(temp_username);
     console.log(temp_password);
