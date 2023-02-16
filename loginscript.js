@@ -1,35 +1,66 @@
+function handleSubmit(event) {
+    event.preventDefault(); //Preventing the auto-refresh of the page (Default action)
+    
+    //Input variables
+    var usernameInput = document.getElementById("username");
+    var passwordInput = document.getElementById("password");
+    var emailInput = document.getElementById("email");
+  
+    var username = usernameInput.value;
+    var password = passwordInput.value;
+    var email = emailInput.value;
+    
+    //Analysing all the possible cases
+    if (username === "" && password != "") {
 
-function saveInputs() {
-    var temp_username = document.getElementById("username").value;
-    var temp_password = document.getElementById("password").value;
-    var temp_email = document.getElementById("email").value;
-    document.getElementById("success-message").innerHTML = "Successful login ✔️";
-    document.getElementById("success-message").classList.add("success");
-    if(temp_email === '') {
-        document.getElementById("IOmessage-container").innerHTML = 
-        "-Username given: " + temp_username + "<br>" + 
-        "-Password given: " + temp_password + "<br>"+
+        alert("Username is required!");
+        return false; //Prevention of submitting 
+    }else if(password === "" && username != "") {
+
+        alert("Password is required!");
+        return false; 
+    }else if(username === "" && password === "") {
+
+        alert("Username and password are required!");
+        return false;
+    }
+  
+    var IOMessageContainer = document.getElementById("IOmessage-container");
+    if (email === "") {
+
+      IOMessageContainer.innerHTML =
+        "-Username given: " + username + "<br>" +
+        "-Password given: " + password + "<br>" +
         "-Email given (optional): N/A" +
-        "<br><br>You can refresh the page here:&emsp;<a href='https://nikoszapantis.github.io/'>🔄</a>" + 
+        "<br><br>You can refresh the page here:&emsp;<a href='https://nikoszapantis.github.io/'>🔄</a>" +
         "<br>You can download my code here:&emsp;<a href='/Nikos_Code.pdf' download>⬇️</a>";
-    }else {
-        document.getElementById("IOmessage-container").innerHTML = 
-        "-Username given: " + temp_username + "<br>" + 
-        "-Password given: " + temp_password + "<br>" +
-        "<br>-Email given (optional): " + temp_email +
-        "<br><br>You can refresh the page here:&emsp;<a href='https://nikoszapantis.github.io/'>🔄</a>" + 
+    } else {
+
+      IOMessageContainer.innerHTML =
+        "-Username given: " + username + "<br>" +
+        "-Password given: " + password + "<br>" +
+        "-Email given (optional): " + email +
+        "<br><br>You can refresh the page here:&emsp;<a href='https://nikoszapantis.github.io/'>🔄</a>" +
         "<br>You can download my code here:&emsp;<a href='/Nikos_Code.pdf' download>⬇️</a>";
-    } 
-    console.log(temp_username);
-    console.log(temp_password);
-} 
+    }
+  
+    var successMessage = document.getElementById("success-message");
+    successMessage.innerHTML = "Successful login ✔️";
+    successMessage.classList.add("success");
+  
+    console.log(username, password, email);
+  
+    return false; //Prevention of submitting
+}
 
 function togglePassword() {
     var passwordInput = document.getElementById("password");
     if(passwordInput.type === "password") {
+        
         passwordInput.type = "text";
         togglePasswordBtn.innerHTML = "Hide";
     }else {
+        
         passwordInput.type = "password";
         togglePasswordBtn.innerHTML = "Show";
     }
