@@ -3,9 +3,9 @@
 <head>
     
     <link rel="stylesheet" type="text/css" href="logstyle.css">
-    <link rel="icon" href="icon.png">
+    <link rel="icon" href="favicon 32x32.png">
 
-    <title>Login Session</title>
+    <title>Niko's Login</title>
     <div class="Animatedheadline">
         <h1>Niko's LoginSession</h1>
     </div>
@@ -15,7 +15,7 @@
 </head>
 <body>
 
-    <form id="form" onkeydown="if (event.keyCode === 13) {saveInputs(); preventDefault(); document.getElementById('form').submit();}">
+    <form onsubmit="return handleSubmit(event)">
         <label for="username">Username</label>
         <input type="text" placeholder="Username is required" id="username">
         <br><br>
@@ -25,13 +25,13 @@
         <button type="button" id="togglePasswordBtn" onclick="togglePassword()">Show</button>
         <br>
         <label for="email">Email (optional)</label>
-        <input type="email" placeholder="Enter your email" id="email">
+        <input type="email" placeholder="Gmail forms only" id="email" pattern=".+@gmail\.com">
         <br><br>
         <div id="RememberMe-container" >
             <input type ="checkbox" class="check-box"> Remember me
         </div>
         <br>
-        <input type="button" class="submit-btn" onclick="saveInputs()" value=" Submit">  
+        <input type="submit" class="submit-btn" id="submitBtn" value=" Submit">  
         <br><br>        
         <div id="success-message"></div>
     </form>
@@ -50,8 +50,9 @@
     </div>
 
     <div id="message-container">
-        <p>Hello there, it's me Nikos and this is my first ever program in HTML using CSS and JS too!<br>You could use "Testing" for username and "Testing123" for password,
-        or even your desired username and password, everything is acceptable by my program. After submiting please take some time to send me feedback so i can involve!</p>
+        <p>Hello there, it's me Nikos and this is my first ever program in HTML using CSS and JS too!<br><strong>Important informations:</strong> Username and Password 
+        are <strong>required</strong> so you will have to fill both of them <strong>AND</strong> for email, <strong>only gmail forms are acceptable</strong> for now. 
+        After submiting please take some time to send me feedback so i can involve!</p>
     </div>
 
     <div id="IOmessage-container">
