@@ -79,6 +79,8 @@ input[type="text"], input[type="password"] {
 }
 
 input[type="email"] {
+    padding: 3px;
+    width: 50%;
     background-color: rgb(194, 194, 194);
     border-radius: 20px;
     border: none;
@@ -218,3 +220,18 @@ input[type="email"] {
 .form-check-input1 , .form-check-input2, .check-box{
     cursor: pointer;
 } 
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: black;
+    background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background-color: rgb(255, 153, 0);
+    outline: 1px solid rgb(0, 0, 0);
+}
