@@ -6,7 +6,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    overflow-x: hidden;
+    overflow-x: hidden; 
     height: 125vh;
     padding: 0%;
     color: rgb(255, 94, 0);
