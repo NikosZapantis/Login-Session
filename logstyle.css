@@ -6,7 +6,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    overflow-x: hidden; 
+    overflow-x: hidden;
     height: 125vh;
     padding: 0%;
     color: rgb(255, 94, 0);
@@ -24,7 +24,7 @@ h1 {
     padding-top: -5px;
     padding-bottom: 2px;
     animation: moving 25s linear infinite;
-} 
+}
 
 @keyframes moving {
     from {
@@ -32,8 +32,8 @@ h1 {
     }
     to {
         transform: translateX(500%);
-    } 
-}  
+    }
+}
 
 h2 {
     text-align: center;
@@ -44,13 +44,51 @@ h2 {
 }
 
 form {
+    outline-style: groove;
     text-align: center;
     margin: 10px auto;
     width: 400px;
-    height: 350px;
+    height: 390px;
     padding: 45px;
     background-color: rgb(0, 0, 0);
-    border-radius: 5px;
+    border-radius: 8vh;
+    animation: colorChange 7s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+      outline-color: rgb(233, 154, 6);
+    }
+    10% {
+      outline-color: rgb(255, 0, 0);
+    }
+    20% {
+      outline-color: rgb(255, 255, 0);
+    }
+    30% {
+      outline-color: rgb(0, 255, 0);
+    }
+    40% {
+      outline-color: rgb(0, 255, 255);
+    }
+    50% {
+      outline-color: rgb(0, 0, 255);
+    }
+    60% {
+      outline-color: rgb(128, 0, 128);
+    }
+    70% {
+      outline-color: rgb(255, 0, 255);
+    }
+    80% {
+      outline-color: rgb(255, 165, 0);
+    }
+    90% {
+      outline-color: rgb(218, 165, 32);
+    }
+    100% {
+      outline-color: rgb(233, 154, 6);
+    }
 }
 
 label {
@@ -82,8 +120,8 @@ input[type="text"], input[type="password"] {
 
 @keyframes shake {
     0% { transform: translateX(0); }
-    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
-    20%, 40%, 60%, 80% { transform: translateX(10px); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-15px); }
+    20%, 40%, 60%, 80% { transform: translateX(15px); }
     100% { transform: translateX(0); }
 }
 
@@ -152,7 +190,7 @@ input[type="email"]:placeholder-shown {
     float: right;
     margin-top: -22px;
     padding-top: 2px;
-    padding-bottom: 4px; 
+    padding-bottom: 4px;
     padding-left: 3px;
     padding-right: 3px;
     padding-block: 3px;
@@ -169,7 +207,7 @@ input[type="email"]:placeholder-shown {
 #message-container {
     font-family : Georgia;
     font: 16px Georgia;
-    color: rgb(0, 0, 0); 
+    color: rgb(0, 0, 0);
     background-size: contain;
     background-repeat: no-repeat;
     padding: 7px;
@@ -242,12 +280,12 @@ input[type="email"]:placeholder-shown {
 }
 
 .form-check-input3 {
-    cursor: not-allowed; 
+    cursor: not-allowed;
 }
 
 .form-check-input1 , .form-check-input2, .check-box{
     cursor: pointer;
-} 
+}
 
 body::-webkit-scrollbar {
     width: 0.5em;
