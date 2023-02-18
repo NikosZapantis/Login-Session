@@ -74,6 +74,19 @@ input[type="text"], input[type="password"] {
     color: black;
 }
 
+.invalid-input {
+    outline-style: solid;
+    outline-color: red;
+    animation: shake 100ms;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+    20%, 40%, 60%, 80% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
+
 ::placeholder {
     color: black;
 }
@@ -84,6 +97,21 @@ input[type="email"] {
     background-color: rgb(194, 194, 194);
     border-radius: 20px;
     border: none;
+}
+
+input[type="email"]:invalid {
+    outline-style: solid;
+    outline-color: red;
+}
+
+input[type="email"]:valid {
+    outline-style: solid;
+    outline-color: green;
+}
+
+input[type="email"]:placeholder-shown {
+    outline-style: solid;
+    outline-color: black;
 }
 
 .submit-btn {
