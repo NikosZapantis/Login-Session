@@ -3,6 +3,12 @@ function handleSubmit(event) {
     
     //Input variables
     var usernameInput = document.getElementById("username");
+
+    usernameInput.addEventListener('keydown', function(e) {
+        if (e.code === 'Space') {
+          e.preventDefault();
+        }
+    });
     var passwordInput = document.getElementById("password");
     var emailInput = document.getElementById("email");
   
@@ -13,16 +19,22 @@ function handleSubmit(event) {
     //Analysing all the possible cases
     if (username === "" && password != "") {
 
-        alert("Username is required!");
+        usernameInput.classList.add("invalid-input");
+        passwordInput.classList.remove("invalid-input");
         return false; //Prevention of submitting 
     }else if(password === "" && username != "") {
 
-        alert("Password is required!");
+        passwordInput.classList.add("invalid-input");
+        usernameInput.classList.remove("invalid-input");
         return false; 
     }else if(username === "" && password === "") {
 
-        alert("Username and password are required!");
+        usernameInput.classList.add("invalid-input");
+        passwordInput.classList.add("invalid-input");
         return false;
+    }else {
+        usernameInput.classList.remove("invalid-input");
+        passwordInput.classList.remove("invalid-input");
     }
   
     var IOMessageContainer = document.getElementById("IOmessage-container");
@@ -53,10 +65,16 @@ function handleSubmit(event) {
     return false; //Prevention of submitting
 }
 
+function disableSpace(event) {
+    if (event.code === "Space") {
+      event.preventDefault();
+    }
+}
+
 function togglePassword() {
     var passwordInput = document.getElementById("password");
     if(passwordInput.type === "password") {
-        
+
         passwordInput.type = "text";
         togglePasswordBtn.innerHTML = "Hide";
     }else {
