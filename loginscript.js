@@ -1,21 +1,15 @@
 function handleSubmit(event) {
     event.preventDefault(); //Preventing the auto-refresh of the page (Default action)
-    
+
     //Input variables
     var usernameInput = document.getElementById("username");
-
-    usernameInput.addEventListener('keydown', function(e) {
-        if (e.code === 'Space') {
-          e.preventDefault();
-        }
-    });
     var passwordInput = document.getElementById("password");
     var emailInput = document.getElementById("email");
   
     var username = usernameInput.value;
     var password = passwordInput.value;
     var email = emailInput.value;
-    
+
     //Analysing all the possible cases
     if (username === "" && password != "") {
 
@@ -33,6 +27,7 @@ function handleSubmit(event) {
         passwordInput.classList.add("invalid-input");
         return false;
     }else {
+
         usernameInput.classList.remove("invalid-input");
         passwordInput.classList.remove("invalid-input");
     }
