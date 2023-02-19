@@ -51,7 +51,7 @@ form {
     height: 390px;
     padding: 45px;
     background-color: rgb(0, 0, 0);
-    border-radius: 8vh;
+    border-radius: 3vh;
     animation: colorChange 7s infinite;
 }
 
