@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="logstyle.css">
-    <link rel="icon" href="favicon 32x32.png"> 
+    <link rel="icon" href="/Html/favicon 32x32.png">
     <script src="loginscript.js"></script> 
 
 <head>
@@ -22,8 +23,7 @@
         <br><br>
         <label for="password">Password</label>
         <input type="password" placeholder="Password is required" id="password" onkeydown="disableSpace(event)">
-        <br><br>
-        <button type="button" id="togglePasswordBtn" onclick="togglePassword()">Show</button>
+        <span id="togglePasswordBtn" onclick="togglePassword()" class="fa fa-eye"></span>
         <br><br>
         <label for="email">Email (optional)</label>
         <input type="email" placeholder="Enter a valid email" id="email" pattern="[A-Za-z0-9]+@[a-z0-9.-]+\.[a-z]{2,4}$" onkeydown="disableSpace(event)">
@@ -51,8 +51,9 @@
     </div>
 
     <div id="message-container">
-        <p>Hey there, it's me Nikos and this is my first ever program in HTML using CSS and JS too!<br><strong>Important informations:</strong> Username and Password 
-        are <strong>required</strong> so you will have to fill both of them <strong>AND</strong> for email, <strong>all forms are acceptable as long as the email is valid</strong>. 
+        <p>Hey there, it's me Nikos and this is my first ever program in HTML using CSS and JS too!<br><strong id="Imp">Important informations:</strong> Username and Password 
+        are <strong id="Imp">required</strong> so you will have to fill both of them <strong id="Imp">AND</strong> for email, 
+        <strong id="Imp">all forms are acceptable as long as the email is valid</strong>. 
         After submiting please take some time to send me feedback so i can evolve!</p>
     </div>
 
