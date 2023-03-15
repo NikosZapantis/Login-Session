@@ -2,7 +2,7 @@ body {
     font-family : Georgia;
     font: 16px Georgia;
     background-color: rgb(236, 154, 0);
-    background-image: url("../logimage.jpg");
+    background-image: url("../../logimage.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -50,8 +50,9 @@ form {
     width: 400px;
     height: 390px;
     padding: 45px;
-    background-color: rgb(0, 0, 0);
-    border-radius: 3vh;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
     animation: colorChange 7s infinite;
 }
 
@@ -101,6 +102,7 @@ label {
 }
 
 input[type="text"], input[type="password"] {
+    caret-color: rgb(255, 94, 0);
     padding: 5px;
     margin-bottom: 20px;
     width: 100%;
@@ -119,10 +121,18 @@ input[type="text"], input[type="password"] {
 }
 
 @keyframes shake {
-    0% { transform: translateX(0); }
-    10%, 30%, 50%, 70%, 90% { transform: translateX(-15px); }
-    20%, 40%, 60%, 80% { transform: translateX(15px); }
-    100% { transform: translateX(0); }
+    0% { 
+        transform: translateX(0); 
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-15px); 
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(15px); 
+    }
+    100% { 
+        transform: translateX(0); 
+    }
 }
 
 ::placeholder {
@@ -130,6 +140,7 @@ input[type="text"], input[type="password"] {
 }
 
 input[type="email"] {
+    caret-color: rgb(255, 94, 0);
     padding: 3px;
     width: 50%;
     background-color: rgb(194, 194, 194);
@@ -182,44 +193,53 @@ input[type="email"]:placeholder-shown {
 }
 
 #togglePasswordBtn {
-    color: rgb(255, 94, 0);
+    position: relative;
+    color: black;
     font-size: 0.9em;
     background-color: transparent;
     border: none;
     cursor: pointer;
     float: right;
-    margin-top: -22px;
-    padding-top: 2px;
-    padding-bottom: 4px;
-    padding-left: 3px;
-    padding-right: 3px;
-    padding-block: 3px;
-    padding-inline-end: 0px;
+    margin-top: -41px;
+    right: -1vh;
+    padding-right: 30px;
+}
+
+#togglePasswordBtn .fa-eye {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
 }
 
 #togglePasswordBtn:hover {
-    color: white;
-    background-color: rgb(0, 0, 0);
-    border-radius: 5px;
-    padding: 1px;
+    color: black;
+    background-color: transparent;
 }
 
 #message-container {
-    font-family : Georgia;
-    font: 16px Georgia;
-    color: rgb(0, 0, 0);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-family : Times;
+    font: 16px Times;
+    color: #fbd824;
     background-size: contain;
     background-repeat: no-repeat;
     padding: 7px;
     border: 2px solid rgb(0, 0, 0);
 }
 
+#Imp {
+    color: #b46709;
+}
+
 #Cookies-container {
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     text-align: center;
     font-family : Georgia;
     font: 16px Georgia;
-    color: rgb(0, 0, 0);
+    color: #b46709;
     background-size: contain;
     background-repeat: no-repeat;
     padding: 3px;
@@ -229,7 +249,7 @@ input[type="email"]:placeholder-shown {
 
 #CF-container {
     background-color: black;
-    color: rgb(188, 184, 199);
+    color: #fbd824;
     border-radius: 10px;
     text-align: left;
     font-size: large;
@@ -300,4 +320,18 @@ body::-webkit-scrollbar-thumb {
     border-radius: 25px;
     background-color: rgb(255, 153, 0);
     outline: 1px solid rgb(0, 0, 0);
+}
+
+/*TODO : RGB SCROLL BAR*/
+
+@media only screen and (max-width: 768px) {
+    
+}
+    
+@media only screen and (max-width: 480px) {
+    
+}
+    
+@media only screen and (max-width: 320px) {
+    
 }
