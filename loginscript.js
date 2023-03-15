@@ -10,13 +10,16 @@ function handleSubmit(event) {
     var password = passwordInput.value;
     var email = emailInput.value;
 
+    usernameInput.classList.remove("invalid-input");
+    passwordInput.classList.remove("invalid-input");
+
     //Analysing all the possible cases
-    if (username === "" && password != "") {
+    if (username === "" && password !== "") {
 
         usernameInput.classList.add("invalid-input");
         passwordInput.classList.remove("invalid-input");
         return false; //Prevention of submitting 
-    }else if(password === "" && username != "") {
+    }else if(username !== "" && password === "") {
 
         passwordInput.classList.add("invalid-input");
         usernameInput.classList.remove("invalid-input");
@@ -68,13 +71,17 @@ function disableSpace(event) {
 
 function togglePassword() {
     var passwordInput = document.getElementById("password");
+    var toggleBtn = document.getElementById("togglePasswordBtn");
+
     if(passwordInput.type === "password") {
 
         passwordInput.type = "text";
-        togglePasswordBtn.innerHTML = "Hide";
+        toggleBtn.classList.remove("fa-eye");
+        toggleBtn.classList.add("fa-eye-slash");
     }else {
         
         passwordInput.type = "password";
-        togglePasswordBtn.innerHTML = "Show";
+        toggleBtn.classList.remove("fa-eye-slash");
+        toggleBtn.classList.add("fa-eye");
     }
 }
