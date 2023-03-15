@@ -196,13 +196,13 @@ input[type="email"]:placeholder-shown {
     position: relative;
     color: black;
     font-size: 0.9em;
+    border-radius: 25px;
     background-color: transparent;
     border: none;
     cursor: pointer;
     float: right;
     margin-top: -41px;
-    right: -1vh;
-    padding-right: 30px;
+    right: 0.5vh;
 }
 
 #togglePasswordBtn .fa-eye {
