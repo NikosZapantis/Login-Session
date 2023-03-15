@@ -2,7 +2,7 @@ body {
     font-family : Georgia;
     font: 16px Georgia;
     background-color: rgb(236, 154, 0);
-    background-image: url("../../logimage.jpg");
+    background-image: url("../logimage.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
