@@ -43,7 +43,7 @@ function handleSubmit(event) {
         "-Password given: " + password + "<br>" +
         "-Email given (optional): N/A" +
         "<br><br>You can refresh the page here:&emsp;<a href='https://nikoszapantis.github.io/'>🔄</a>" +
-        "<br>You can download my code here:&emsp;<a href='/Code.pdf' download>⬇️</a>";
+        "<br>You can download my code here:&emsp;<a href='../Code.pdf' download>⬇️</a>";
     } else {
 
       IOMessageContainer.innerHTML =
@@ -51,7 +51,7 @@ function handleSubmit(event) {
         "-Password given: " + password + "<br>" +
         "-Email given (optional): " + email +
         "<br><br>You can refresh the page here:&emsp;<a href='https://nikoszapantis.github.io/'>🔄</a>" +
-        "<br>You can download my code here:&emsp;<a href='/Code.pdf' download>⬇️</a>";
+        "<br>You can download my code here:&emsp;<a href='../Code.pdf' download>⬇️</a>";
     }
   
     var successMessage = document.getElementById("success-message");
